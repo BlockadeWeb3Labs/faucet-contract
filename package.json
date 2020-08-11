@@ -1,0 +1,30 @@
+{
+  "name": "faucet-contract",
+  "version": "1.0.0",
+  "description": "Faucet Transfer Distribution Contract",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "ethlint": "node_modules/ethlint/bin/solium.js --dir contracts",
+    "eslint": "node_modules/eslint/bin/eslint.js migrations test",
+    "slither": "slither --exclude naming-convention . || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeonDistrict/faucet-contract.git"
+  },
+  "author": "Blockade Games",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeonDistrict/faucet-contract/issues"
+  },
+  "homepage": "https://github.com/NeonDistrict/faucet-contract#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^3.1.0",
+    "truffle": "^5.1.39",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
